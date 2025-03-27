@@ -1,0 +1,21 @@
+body{
+    background: pink;
+    font-family: ComicNeue, sans-serif;
+}
+
+.head{
+    display: flex;
+    gap: 10px;
+}
+
+img#logo{
+    width: 100px;
+    height: fit-content;
+}
+
+@font-face {
+    font-family: ComicNeue;
+    src: url(fonts/import0/ComicNeue-Regular.ttf);
+    font-weight: normal;
+    font-size: medium;
+}
