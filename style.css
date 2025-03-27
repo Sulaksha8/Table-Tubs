@@ -13,6 +13,12 @@ img#logo{
     height: fit-content;
 }
 
+.footer{
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+}
+
 @font-face {
     font-family: ComicNeue;
     src: url(fonts/import0/ComicNeue-Regular.ttf);
