@@ -1,6 +1,36 @@
+@import url(font.css);
+@import url(animations.css);
 body{
-    background: pink;
+    background: url(img/background.png), linear-gradient(75deg, pink, white);
+    background-size: cover;
     font-family: ComicNeue, sans-serif;
+}
+
+dialog #close{
+    margin-top: 10px;
+    width: 100px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+    &:hover{
+        cursor: pointer;
+        border: none;
+        background: hsl(0, 90%, 42%);
+    }  
+
+    &:focus{
+        border: none;
+    }
+}
+
+.dialogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 .head{
@@ -13,15 +43,13 @@ img#logo{
     height: fit-content;
 }
 
+.content{
+    padding-top: 10px;
+}
+
 .footer{
     position: absolute;
     bottom: 10px;
     font-weight: bold;
 }
 
-@font-face {
-    font-family: ComicNeue;
-    src: url(fonts/import0/ComicNeue-Regular.ttf);
-    font-weight: normal;
-    font-size: medium;
-}

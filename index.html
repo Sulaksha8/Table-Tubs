@@ -6,21 +6,29 @@
     <title>Table Tubs</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="clipboard.js" defer></script>
+    <script src="dialog.js" defer></script>
 </head>
 <body>
-    <div class="head">
+    <dialog id="productNone">
+        <div class="dialogContent">
+            <label class="animate__animated animate__flash">*****NOTICE****** This is not an actual product and this site is solely for development purposes!</label>
+            <button id="close">Close</button>
+        </div>
+    </dialog>
+    <div class="head animate__animated animate__backInLeft">
         <img src="img/Logo.png" alt="" id="logo">
         <h1 class="header">
             Table Tubs
         </h1>
     </div>
     <div class="content">
-        
+        Introducing the revolutionary <strong>Table Tub</strong>. This tub acts as a drawer for all your stuff. 
     </div>
-
-    <div class="footer">
-        *****NOTICE****** This is not an actual product and is solely for development purposes!
+    
+    <div class="footer animate__animated animate__flash">
+        *****NOTICE****** This is not an actual product and this site is solely for development purposes!
     </div>
 </body>
 </html>
