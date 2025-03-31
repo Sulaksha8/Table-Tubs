@@ -1,55 +1,45 @@
 @import url(font.css);
 @import url(animations.css);
-body{
+
+body {
     background: url(img/background.png), linear-gradient(75deg, pink, white);
     background-size: cover;
     font-family: ComicNeue, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    scrollbar-color: pink purple;
 }
 
 hr {
     border: 0;
-    clear:both;
-    display:block;
+    clear: both;
+    display: block;
     width: 100%;               
     background-color: black;
     height: 1px;
 }
-  
 
-.largeText{
+.largeText {
     font-size: xx-large;
 }
 
-button[disabled], button:disabled{
+button[disabled], button:disabled {
     cursor: not-allowed;
     opacity: 0.25;
-
-    &:hover{
-        cursor: not-allowed;
-        opacity: 0.1;
-    }
 }
 
-dialog #close{
+dialog #close {
     margin-top: 10px;
     width: 100px;
     background: red;
     color: white;
     border: none;
     border-radius: 5px;
-    
-    &:hover{
-        cursor: pointer;
-        border: none;
-        background: hsl(0, 90%, 42%);
-    }  
-
-    &:focus{
-        border: none;
-    }
 }
 
-.dialogContent{
+.dialogContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,24 +47,27 @@ dialog #close{
     font-weight: bold;
 }
 
-.head{
+.head {
     display: flex;
     gap: 10px;
 }
 
-img#logo{
+img#logo {
     width: 100px;
     height: fit-content;
 }
 
-.content{
+.content {
     padding-top: 10px;
+    flex: 1;
 }
 
-.footer{
-    position: absolute;
-    bottom: 10px;
+.footer {
     font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
 
 .slides {
