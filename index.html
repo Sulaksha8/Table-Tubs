@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="clipboard.js" defer></script>
-    <script src="dialog.js" defer></script>
+    <!-- <script src="dialog.js" defer></script> -->
 </head>
 <body>
     <dialog id="productNone">
         <div class="dialogContent">
-            <label class="animate__animated animate__flash">*****NOTICE****** This is not an actual product and this site is solely for development purposes!</label>
+            <label class="animate__animated animate__flash" id="warning-text" data-dialog="warning-text">*****NOTICE****** This is not an actual product and this site is solely for development purposes!</label>
             <button id="close">Close</button>
         </div>
     </dialog>
@@ -24,7 +24,32 @@
         </h1>
     </div>
     <div class="content">
-        Introducing the revolutionary <strong>Table Tub</strong>. This tub acts as a drawer for all your stuff. 
+        <div class="slides">
+                <div>
+                    <p>What are Table tubs?</p>
+                </div>
+                <div>
+                    <p>Table Tubs are slidable drawers that belong underneath your table. Table Tubs are a practical and efficient storage. Instead of wasting your time walking to you normal tubs, everything you need is right under you. These drawers are designed to maximize space while providing easy access to items that are frequently used or needed. Table tubs can hold stationery, books and even rubbish. Overall, they add functionality, help maintain organization, and contribute to a clutter-free environment.</p>
+                </div>
+                <hr>
+                <hr>
+                <div>
+                    <p>What colours are they?</p>
+                </div>
+                <div>
+                    <img src="img/colors.jpg" alt="">
+                </div>
+                <hr>
+                <hr>
+                <div>
+                    <p>How big are they?</p>
+                </div>
+                <div>
+                    <img src="img/size.jpg" alt="">
+                </div>
+                <hr>
+                <hr>
+        </div>
     </div>
     
     <div class="footer animate__animated animate__flash">
