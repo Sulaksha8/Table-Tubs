@@ -1,6 +1,11 @@
 @import url(font.css);
 @import url(animations.css);
 
+*{
+    box-sizing: border-box;
+    padding: 1px;
+}
+
 body {
     background: url(img/background.png), linear-gradient(75deg, pink, white);
     background-size: cover;
@@ -9,6 +14,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    overflow-y: auto;
     scrollbar-color: pink purple;
 }
 
@@ -37,6 +43,11 @@ dialog #close {
     color: white;
     border: none;
     border-radius: 5px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: hsl(0, 100%, 22%);
+    }
 }
 
 .dialogContent {
@@ -45,6 +56,7 @@ dialog #close {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    padding: 5px;
 }
 
 .head {
@@ -82,4 +94,11 @@ img#logo {
     height: 700px;
     background: white;
     overflow-y: auto;
+}
+
+#prototype{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
